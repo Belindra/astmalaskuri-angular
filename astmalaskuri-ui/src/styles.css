@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html {
+  font-size: 170%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(90deg, #DBECB5 20%, powderblue 80%);
+}
+
+#wrapper {
+  letter-spacing: 0.2em;
+
+}
+
+#reuna {
+    border: solid darkcyan 0.3em;
+    border-radius: 10px;
+    padding: 1em;
+    padding-bottom: 3em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.ngx-toastr {
+  font-size: 0.5rem;
+}
+
+@media only screen and (max-width: 426px) {
+  .laakenaytto-flex{
+    flex-direction: column;
+  }
+
+  #reuna {
+    padding: 0em;
+    padding-bottom: 1.5em;
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-bottom: 1rem;
+  }
+
+  .otsikko {
+    font-size: 1.5em;
+  }
+
+  html {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .otsikko {
+    font-size: 2em;
+  }
+
+  html {
+    font-size: 100%;
+  }
+}
+
+
+
+
+
+
+
+

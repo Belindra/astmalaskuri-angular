@@ -1,0 +1,20 @@
+
+<main id="wrapper" class="container">
+
+  <figure id="reuna">
+  <h1 class="otsikko mt-5">Lunan astmalääkelaskuri</h1>
+  <p class="mt-4">Lääkkeiden tiedot</p>
+
+  <app-viimeksi-kaytetyt></app-viimeksi-kaytetyt>
+  <app-annoksia-jaljella></app-annoksia-jaljella>
+
+
+  <p class="mt-3"><button  class="btn" (click)="resetoiLaake()">Nollaa käytetyt lääkeannokset ja aloita uusi lääkepakkaus</button></p>
+  <section *ngIf="naytaLaake">
+    <app-resetoi-laakkeet></app-resetoi-laakkeet>
+  </section>
+
+</figure>
+
+</main>
+<app-footer></app-footer>

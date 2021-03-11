@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/406788a2-5cd6-409c-ba8c-30256668a253/resourceGroups/Astmalaskuri/providers/Microsoft.Web/sites/astmalaakelaskuri",
+    "appService.deploySubpath": "dist\\astmalaskuri"
+}

@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+
+<article class="d-flex laakenaytto-flex">
+  <p class="card alert-warning">
+    Flixotidea on jäljellä {{FAnnokset}} annosta
+=======
+<article class=" d-flex flex-sm-row">
+  <p class="card alert-warning" style="margin:5px;">
+    Flixotidea on jäljellä {{flixotide.totalPortion - flixotide.usedPortion}} annosta
+>>>>>>> origin/backend
+    <button class="btn btn-warning text-white">Käytä Flixotidea</button>
+  </p>
+
+  <p class="card  alert-info" style="margin:5px;">Ventolinea on jäljellä {{ventoline.totalPortion - ventoline.usedPortion}} annosta
+    <button class="btn btn-info">Käytä Ventolinea</button>
+  </p>
+</article>

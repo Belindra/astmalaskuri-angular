@@ -1,0 +1,33 @@
+<form class=" d-flex flex-sm-row" id="editForm" (ngSubmit)="paivitaLaakkeet()" #f="ngForm">
+  <main>
+    <p class="card alert-warning m-1">
+      Flixotidea on jäljellä {{flixotide.totalPortion - flixotide.usedPortion}} annosta
+      <button type="button" id="flix" (click)="flixotideLaake()" class="btn btn-warning text-white m-1">Käytä Flixotidea
+      </button>
+    </p>
+    <article class=" form-group">
+      <section *ngIf="flix && !ven">
+        <label for="amount">Flixotide annokset:</label>
+        <input required type="number" id="amount" class="form-control" name="amount" min=0 max=12 ngModel pattern="[1-9]+[0-9]*$" [(ngModel)]="uportion">
+      </section>
+  </article>
+  </main>
+
+  <main>
+    <p class="card  alert-info m-1">Ventolinea on jäljellä {{ventoline.totalPortion - ventoline.usedPortion}} annosta
+      <button type="button" id="ven" (click)="ventolineLaake()" class="btn btn-info m-1">Käytä Ventolinea
+      </button>
+    </p>
+    <article class=" form-group">
+      <section *ngIf="ven && !flix">
+        <label for="amount">Ventoline annokset:</label>
+        <input required type="number" id="amount" class="form-control" name="amount" min=0 max=12 ngModel pattern="[1-9]+[0-9]*$" [(ngModel)]="uportion">
+      </section>
+    </article>
+  </main>
+
+</form>
+<section *ngIf="ven  || flix ">
+
+<button [disabled]="!f.valid" form="editForm" class="btn btn-primary m-1" type="submit">Tallenna</button>
+</section>
